@@ -1,0 +1,28 @@
+to generate a new project with rails
+
+  # generates folders and files and install gems needed
+  # runs `bundle install` as well
+
+  rails new <project-name> -d <database-support>
+
+  # -d refers to database. rails supports: mysql, postgresql
+
+  # examples:
+  rails new simple_cms -d mysql
+  rails new bookstore -d postgresql
+
+  # you can see more of what you can do with
+  rails new -h
+
+to create databases
+
+  to create just current RAILS_ENV environment
+
+    rails db:create
+
+  to create all databases (development, test, production) defined in database.yml
+
+    rails db:create:all
+
+      * seems that to create a production env database you need a role in psql with the same name as the project
+

@@ -1,0 +1,16 @@
+to generate models
+
+  # create one model with multiple attributes in one command
+  rails generate model <Model-name> <attribute>:<datatype>
+
+  # example
+  rails generate model User name:string email:string
+
+
+  this for now only create some files in your codebase
+
+    files for the models and files for migrations are created
+
+    no change in database yet is made (at least that seems to happen)
+      changes in database occur once you run migrations
+
