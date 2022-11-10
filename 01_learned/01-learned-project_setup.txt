@@ -14,6 +14,10 @@ to generate a new project with rails
   # you can see more of what you can do with
   rails new -h
 
+to install gemfiles (if you cloned a rails repo)
+
+  bundle install
+
 to create databases
 
   to create just current RAILS_ENV environment
