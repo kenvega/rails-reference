@@ -4,7 +4,7 @@ to generate models
   rails generate model <Model-name> <attribute>:<datatype>
 
   # example
-  rails generate model User name:string email:string
+  rails generate model User name:string email:string age:integer
 
 
   this for now only creates some files in your codebase
@@ -14,3 +14,9 @@ to generate models
     no change in database yet is made (at least that seems to happen)
       changes in database occur once you run migrations
 
+
+helpful links
+
+  if you want some models and seed data to follow easily the rails query guide (https://guides.rubyonrails.org/active_record_querying.html)
+
+    you might want to check this repo https://github.com/weedySeaDragon/rails-guides-bookstore-models

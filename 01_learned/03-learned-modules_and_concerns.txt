@@ -1,0 +1,14 @@
+https://blog.appsignal.com/2020/09/16/rails-concers-to-concern-or-not-to-concern.html
+
+https://www.typefast.co/rails-modules-vs-concerns/
+
+https://www.akshaykhot.com/how-rails-concerns-work-and-how-to-use-them/
+
+modules come from ruby to reuse methods in classes
+
+but there are specific methods made in rails like callbacks, validations, scopes, etc
+
+  those won't work just with including modules in your classes
+
+    for those to work you will need your model to extend ActiveSupport::Concern
+

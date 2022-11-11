@@ -1,0 +1,3 @@
+running migrations don't check the models, just the migration files
+
+  you could have models that associate with other models that doesn't even exist and migrations still will run fine. I tested this
