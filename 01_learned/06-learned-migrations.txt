@@ -1,0 +1,21 @@
+to run migrations
+
+  rails db:migrate
+
+to rollback the last migration done
+
+  rails db:rollback STEP=1
+
+references and belongs_to are the same (references is an alias)
+  https://github.com/rails/rails/blob/88aa2efd692619e87eee88dfc48d608bea9bcdb4/activerecord/lib/active_record/connection_adapters/abstract/schema_definitions.rb#L415-L429
+
+
+
+https://medium.com/@jtbartlow/adding-references-in-rails-using-the-command-line-7e043746fd28
+
+
+Rails automatically adds an index to foreign keys when you generate a reference
+
+Note that writing ‘doctor:belongs_to’ is the exact same thing as ‘doctor:references’.
+
+

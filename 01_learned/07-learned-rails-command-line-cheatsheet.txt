@@ -1,0 +1,18 @@
+to create a model
+
+  rails g model <Model Name>
+
+to create a reference when creating a model
+
+  rails g model <Model-name> <attribute>:<datatype> <other-model>:references
+
+  example
+
+  rails g model Appointment doctor:references
+
+  rails g model Book author:references
+    # will create a migration with a book table and an author_id and an index for that foreign key
+
+to create a migration
+
+
