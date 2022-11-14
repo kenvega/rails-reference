@@ -16,3 +16,11 @@ to create a reference when creating a model
 to create a migration
 
 
+
+you can get more context on what can you use by doing
+
+  rails g <command> --help
+
+  example
+
+  rails g model --help

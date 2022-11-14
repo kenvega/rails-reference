@@ -19,3 +19,8 @@ Rails automatically adds an index to foreign keys when you generate a reference
 Note that writing ‘doctor:belongs_to’ is the exact same thing as ‘doctor:references’.
 
 
+
+https://www.ralfebert.com/snippets/ruby-rails/models-tables-migrations-cheat-sheet/
+
+https://gist.github.com/cdesch/2f8de645cad1d83aa251c0a20b0f7097
+

@@ -1,4 +1,5 @@
 the schema file only changes once you run the migrations
+  make sense that it changes at that point because
+    when you create a model or migration a migration file is created but you can still modify it
 
-make sense that it changes at that point because
-  when you create a model or migration a migration file is created but you can still modify it
+the schema file also removes all done changes from the last migration when you rollback
