@@ -1,0 +1,31 @@
+there are migrations that use belongs_to
+
+  t.belongs_to :author, foreign_key: true, index: true
+
+and there are models that use belongs_to too
+
+  class Book < ApplicationRecord
+    belongs_to :author
+  end
+
+what is the difference between them? how to know from where those methods are running
+
+  for the belongs_to in the models that is used for associations
+
+    it comes from ActiveRecord::Associations::ClassMethods
+
+    https://api.rubyonrails.org/classes/ActiveRecord/Associations/ClassMethods.html#method-i-belongs_to
+
+  for the belongs_to that is used in migrations
+
+    it comes from ActiveRecord::ConnectionAdapters::TableDefinition
+
+    https://api.rubyonrails.org/classes/ActiveRecord/ConnectionAdapters/TableDefinition.html#method-i-belongs_to
+
+      this refers to other part of the doc
+
+        https://api.rubyonrails.org/classes/ActiveRecord/ConnectionAdapters/SchemaStatements.html#method-i-add_reference
+
+  how to know where this methods comes from?
+    I knew because I was using RubyMine. Currently I have no other way to know where they come from
+
