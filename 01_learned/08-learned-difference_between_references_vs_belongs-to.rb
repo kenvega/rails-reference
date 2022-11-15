@@ -108,7 +108,7 @@
         create_table "books", force: :cascade do |t|
           t.string "title"
           t.integer "year_published"
-          t.integer "author_id"
+          t.integer "author_id" # the integer created here ends as normal int instead of bigint (tested in postgres)
           t.datetime "created_at", null: false
           t.datetime "updated_at", null: false
           t.index ["author_id"], name: "index_books_on_author_id"
@@ -207,4 +207,16 @@
           t.index ["author_id"], name: "index_books_on_author_id"
         end
         add_foreign_key "books", "authors"
+
+
+# can you replace the word belongs_to in models to references and it works?
+  # test done
+        class Book < ApplicationRecord
+          references :author
+          belongs_to :supplier
+        end
+
+        # then tried in rails console: Book.first.author
+        # but got NoMethodError
+        # conclusion: 'references' cannot replace 'belongs_to' in model associations, it seems that only in migrations
 
