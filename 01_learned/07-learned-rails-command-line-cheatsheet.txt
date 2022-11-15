@@ -15,7 +15,8 @@ to create a reference when creating a model
   rails g model Book author:references
     # will create a migration with a book table and an author_id and an index for that foreign key
 
-  rails g model Book title year_published:integer isbn 'price:decimal{5,2}' out_of_print:boolean views:integer author:references supplier:belongs_to
+  rails g model Book title year_published:integer isbn 'price:decimal{10,2}' out_of_print:boolean views:integer author:references supplier:belongs_to
+    # references and belongs_to here will do the exact same thing
 
 to create a migration
 
