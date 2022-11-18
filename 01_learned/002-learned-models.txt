@@ -6,6 +6,8 @@ to generate models
   # example
   rails generate model User name:string email:string age:integer
 
+  rails g model Book title year_published:integer 'price:decimal{10,2}' out_of_print:boolean author:references supplier:belongs_to
+
 
   this for now only creates some files in your codebase
 
