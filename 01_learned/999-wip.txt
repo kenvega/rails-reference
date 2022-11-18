@@ -1,0 +1,28 @@
+
+
+following a project to practice queries
+  https://github.dev/weedySeaDragon/rails-guides-bookstore-models
+
+  https://guides.rubyonrails.org/active_record_querying.html
+
+  https://github.com/weedySeaDragon/rails-guides-bookstore-models/blob/5c6a6a3237177ca66e2f1bd7f3754fd5763c44b5/app/models/concerns/person.rb#L1
+
+
+
+
+some stackoverflow links i didn't finish to read
+
+  https://stackoverflow.com/a/22815259
+  https://github.com/weedySeaDragon/rails-guides-bookstore-models/blob/5c6a6a3237177ca66e2f1bd7f3754fd5763c44b5/app/models/concerns/person.rb#L1
+
+
+how irreversible migrations work?
+
+  i've seen this in some migrations
+    can you no longer go back to that and past migrations (?) because of the 'raise'? need to test that
+      raise ActiveRecord::IrreversibleMigration
+
+
+checking join tables
+  https://stackoverflow.com/questions/35305439/create-join-table-using-migrations-or-models
+
