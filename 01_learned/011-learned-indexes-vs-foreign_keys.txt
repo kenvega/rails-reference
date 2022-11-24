@@ -1,0 +1,32 @@
+https://dzone.com/articles/the-secrets-of-indexes-amp-foreign-keys
+
+https://www.google.com/search?q=What+is+the+difference+between+an+Index+and+a+Foreign+Key%3F&sourceid=chrome&ie=UTF-8
+
+https://www.quora.com/What-is-the-difference-between-a-foreign-key-and-an-index
+
+https://www.folkstalk.com/tech/foreign-key-vs-indexes-with-code-examples/
+
+https://stackoverflow.com/questions/1732467/what-is-the-difference-between-an-index-and-a-foreign-key/1732508#1732508
+
+
+
+
+index on rails
+
+  not exactly remember which one is the one used in migrations, check with rubymine probably
+
+  https://api.rubyonrails.org/classes/ActiveRecord/ConnectionAdapters/Table.html#method-i-index
+    https://api.rubyonrails.org/classes/ActiveRecord/ConnectionAdapters/SchemaStatements.html#method-i-add_index
+
+  https://api.rubyonrails.org/classes/ActiveRecord/ConnectionAdapters/TableDefinition.html#method-i-index
+
+
+
+index
+  it is a data structure
+  makes any random access to the rows much faster and efficient
+
+foreign key
+  pointer to a corresponding column in another table
+  forms a referential constraint between 2 tables
+

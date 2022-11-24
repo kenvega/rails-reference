@@ -8,7 +8,11 @@ and there are models that use belongs_to too
     belongs_to :author
   end
 
-what is the difference between them? how to know from where those methods are running
+how to know where the 'belongs_to' methods come from?
+  Currently the only way I know to see where they come from is using RubyMine and hovering over their method names
+    that tells you exactly where the method comes from
+
+what is the difference between those uses of belongs_to?
 
   for the belongs_to in the models that is used for associations
 
@@ -26,6 +30,4 @@ what is the difference between them? how to know from where those methods are ru
 
         https://api.rubyonrails.org/classes/ActiveRecord/ConnectionAdapters/SchemaStatements.html#method-i-add_reference
 
-  how to know where this methods comes from?
-    I knew because I was using RubyMine. Currently I have no other way to know where they come from
 

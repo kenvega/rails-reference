@@ -26,3 +26,6 @@ how irreversible migrations work?
 checking join tables
   https://stackoverflow.com/questions/35305439/create-join-table-using-migrations-or-models
 
+
+read links on
+  01_learned/011-learned-indexes-vs-foreign_keys.txt
